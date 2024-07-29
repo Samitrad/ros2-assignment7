@@ -1,0 +1,368 @@
+[0.000000] (-) TimerEvent: {}
+[0.000350] (interfaces) JobQueued: {'identifier': 'interfaces', 'dependencies': OrderedDict()}
+[0.000374] (walldetector) JobQueued: {'identifier': 'walldetector', 'dependencies': OrderedDict()}
+[0.000386] (interfaces) JobStarted: {'identifier': 'interfaces'}
+[0.003857] (walldetector) JobStarted: {'identifier': 'walldetector'}
+[0.007433] (interfaces) JobProgress: {'identifier': 'interfaces', 'progress': 'cmake'}
+[0.007571] (interfaces) Command: {'cmd': ['/usr/bin/cmake', '/home/sami/session7/src/interfaces', '-DCMAKE_INSTALL_PREFIX=/home/sami/session7/install/interfaces'], 'cwd': '/home/sami/session7/build/interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'sami'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/sami'), ('OLDPWD', '/home/sami/session7/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2942'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=d1fae2888015e5f6e0192dbc66a76e66'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/sami/session7-ros2/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'sami'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'sami'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/sami/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/sami-ThinkBook-15-G2-ITL:@/tmp/.ICE-unix/2942,unix/sami-ThinkBook-15-G2-ITL:/tmp/.ICE-unix/2942'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/9aeb33c3_b72a_4cfb_ba4e_4298ecfd7e62'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.ZKZXR2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.653'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/sami/session7-ros2/install/walldetector:/home/sami/session7-ros2/install/interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/sami/session7/build/interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=d1fae2888015e5f6e0192dbc66a76e66'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/sami/session7-ros2/install/walldetector/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/sami/session7-ros2/install/interfaces:/home/sami/session7-ros2/install/walldetector:/opt/ros/humble')]), 'shell': False}
+[0.056629] (interfaces) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.093675] (interfaces) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.098915] (interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.099474] (-) TimerEvent: {}
+[0.144762] (interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.149245] (interfaces) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.149422] (interfaces) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.149724] (interfaces) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.151858] (interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.199594] (-) TimerEvent: {}
+[0.205590] (interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.210044] (interfaces) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.210155] (interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.210450] (interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.216434] (interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.299710] (-) TimerEvent: {}
+[0.309902] (interfaces) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.366372] (interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.369191] (interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.375448] (interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.394175] (walldetector) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/walldetector', 'build', '--build-base', '/home/sami/session7/build/walldetector/build', 'install', '--record', '/home/sami/session7/build/walldetector/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/sami/session7/src/walldetector', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'sami', 'LC_TIME': 'en_US.UTF-8', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/sami', 'OLDPWD': '/home/sami/session7/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'en_US.UTF-8', 'DBUS_STARTER_BUS_TYPE': 'session', 'SYSTEMD_EXEC_PID': '2942', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=d1fae2888015e5f6e0192dbc66a76e66', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/sami/session7-ros2/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'sami', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'sami', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/sami/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/sami-ThinkBook-15-G2-ITL:@/tmp/.ICE-unix/2942,unix/sami-ThinkBook-15-G2-ITL:/tmp/.ICE-unix/2942', 'PAPERSIZE': 'letter', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'en_US.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/9aeb33c3_b72a_4cfb_ba4e_4298ecfd7e62', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'en_US.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.ZKZXR2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.653', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/sami/session7-ros2/install/walldetector:/home/sami/session7-ros2/install/interfaces:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'en_US.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'en_US.UTF-8', 'LC_IDENTIFICATION': 'en_US.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/sami/session7/build/walldetector', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=d1fae2888015e5f6e0192dbc66a76e66', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/sami/session7/build/walldetector/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sami/session7/install/walldetector/lib/python3.10/site-packages:/home/sami/session7-ros2/install/walldetector/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'en_US.UTF-8', 'LC_PAPER': 'en_US.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/sami/session7-ros2/install/interfaces'}, 'shell': False}
+[0.399790] (-) TimerEvent: {}
+[0.404969] (interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.499966] (-) TimerEvent: {}
+[0.538405] (walldetector) StdoutLine: {'line': b'running egg_info\n'}
+[0.538670] (walldetector) StdoutLine: {'line': b'creating ../../build/walldetector/walldetector.egg-info\n'}
+[0.538884] (walldetector) StdoutLine: {'line': b'writing ../../build/walldetector/walldetector.egg-info/PKG-INFO\n'}
+[0.539077] (walldetector) StdoutLine: {'line': b'writing dependency_links to ../../build/walldetector/walldetector.egg-info/dependency_links.txt\n'}
+[0.539158] (walldetector) StdoutLine: {'line': b'writing entry points to ../../build/walldetector/walldetector.egg-info/entry_points.txt\n'}
+[0.539211] (walldetector) StdoutLine: {'line': b'writing requirements to ../../build/walldetector/walldetector.egg-info/requires.txt\n'}
+[0.539257] (walldetector) StdoutLine: {'line': b'writing top-level names to ../../build/walldetector/walldetector.egg-info/top_level.txt\n'}
+[0.539318] (walldetector) StdoutLine: {'line': b"writing manifest file '../../build/walldetector/walldetector.egg-info/SOURCES.txt'\n"}
+[0.540258] (walldetector) StdoutLine: {'line': b"reading manifest file '../../build/walldetector/walldetector.egg-info/SOURCES.txt'\n"}
+[0.540648] (walldetector) StdoutLine: {'line': b"writing manifest file '../../build/walldetector/walldetector.egg-info/SOURCES.txt'\n"}
+[0.540730] (walldetector) StdoutLine: {'line': b'running build\n'}
+[0.540775] (walldetector) StdoutLine: {'line': b'running build_py\n'}
+[0.540834] (walldetector) StdoutLine: {'line': b'creating /home/sami/session7/build/walldetector/build\n'}
+[0.540874] (walldetector) StdoutLine: {'line': b'creating /home/sami/session7/build/walldetector/build/lib\n'}
+[0.540911] (walldetector) StdoutLine: {'line': b'creating /home/sami/session7/build/walldetector/build/lib/walldetector\n'}
+[0.540949] (walldetector) StdoutLine: {'line': b'copying walldetector/follower.py -> /home/sami/session7/build/walldetector/build/lib/walldetector\n'}
+[0.541005] (walldetector) StdoutLine: {'line': b'copying walldetector/finder.py -> /home/sami/session7/build/walldetector/build/lib/walldetector\n'}
+[0.541043] (walldetector) StdoutLine: {'line': b'copying walldetector/__init__.py -> /home/sami/session7/build/walldetector/build/lib/walldetector\n'}
+[0.541080] (walldetector) StdoutLine: {'line': b'copying walldetector/laptime_server.py -> /home/sami/session7/build/walldetector/build/lib/walldetector\n'}
+[0.541129] (walldetector) StdoutLine: {'line': b'copying walldetector/laptime_client.py -> /home/sami/session7/build/walldetector/build/lib/walldetector\n'}
+[0.541180] (walldetector) StdoutLine: {'line': b'running install\n'}
+[0.541349] (walldetector) StdoutLine: {'line': b'running install_lib\n'}
+[0.541867] (walldetector) StdoutLine: {'line': b'creating /home/sami/session7/install/walldetector/lib/python3.10/site-packages/walldetector\n'}
+[0.541904] (walldetector) StdoutLine: {'line': b'copying /home/sami/session7/build/walldetector/build/lib/walldetector/follower.py -> /home/sami/session7/install/walldetector/lib/python3.10/site-packages/walldetector\n'}
+[0.541955] (walldetector) StdoutLine: {'line': b'copying /home/sami/session7/build/walldetector/build/lib/walldetector/finder.py -> /home/sami/session7/install/walldetector/lib/python3.10/site-packages/walldetector\n'}
+[0.542007] (walldetector) StdoutLine: {'line': b'copying /home/sami/session7/build/walldetector/build/lib/walldetector/__init__.py -> /home/sami/session7/install/walldetector/lib/python3.10/site-packages/walldetector\n'}
+[0.542057] (walldetector) StdoutLine: {'line': b'copying /home/sami/session7/build/walldetector/build/lib/walldetector/laptime_server.py -> /home/sami/session7/install/walldetector/lib/python3.10/site-packages/walldetector\n'}
+[0.542094] (walldetector) StdoutLine: {'line': b'copying /home/sami/session7/build/walldetector/build/lib/walldetector/laptime_client.py -> /home/sami/session7/install/walldetector/lib/python3.10/site-packages/walldetector\n'}
+[0.542355] (walldetector) StdoutLine: {'line': b'byte-compiling /home/sami/session7/install/walldetector/lib/python3.10/site-packages/walldetector/follower.py to follower.cpython-310.pyc\n'}
+[0.542827] (walldetector) StdoutLine: {'line': b'byte-compiling /home/sami/session7/install/walldetector/lib/python3.10/site-packages/walldetector/finder.py to finder.cpython-310.pyc\n'}
+[0.543131] (walldetector) StdoutLine: {'line': b'byte-compiling /home/sami/session7/install/walldetector/lib/python3.10/site-packages/walldetector/__init__.py to __init__.cpython-310.pyc\n'}
+[0.543252] (walldetector) StdoutLine: {'line': b'byte-compiling /home/sami/session7/install/walldetector/lib/python3.10/site-packages/walldetector/laptime_server.py to laptime_server.cpython-310.pyc\n'}
+[0.543463] (walldetector) StdoutLine: {'line': b'byte-compiling /home/sami/session7/install/walldetector/lib/python3.10/site-packages/walldetector/laptime_client.py to laptime_client.cpython-310.pyc\n'}
+[0.543711] (walldetector) StdoutLine: {'line': b'running install_data\n'}
+[0.543766] (walldetector) StdoutLine: {'line': b'creating /home/sami/session7/install/walldetector/share/ament_index\n'}
+[0.543822] (walldetector) StdoutLine: {'line': b'creating /home/sami/session7/install/walldetector/share/ament_index/resource_index\n'}
+[0.543863] (walldetector) StdoutLine: {'line': b'creating /home/sami/session7/install/walldetector/share/ament_index/resource_index/packages\n'}
+[0.543928] (walldetector) StdoutLine: {'line': b'copying resource/walldetector -> /home/sami/session7/install/walldetector/share/ament_index/resource_index/packages\n'}
+[0.543966] (walldetector) StdoutLine: {'line': b'copying package.xml -> /home/sami/session7/install/walldetector/share/walldetector\n'}
+[0.544001] (walldetector) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.545021] (walldetector) StdoutLine: {'line': b'Copying ../../build/walldetector/walldetector.egg-info to /home/sami/session7/install/walldetector/lib/python3.10/site-packages/walldetector-0.0.0-py3.10.egg-info\n'}
+[0.545454] (walldetector) StdoutLine: {'line': b'running install_scripts\n'}
+[0.558988] (walldetector) StdoutLine: {'line': b"writing list of installed files to '/home/sami/session7/build/walldetector/install.log'\n"}
+[0.575476] (walldetector) CommandEnded: {'returncode': 0}
+[0.584283] (walldetector) JobEnded: {'identifier': 'walldetector', 'rc': 0}
+[0.600137] (-) TimerEvent: {}
+[0.649334] (interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[0.700312] (-) TimerEvent: {}
+[0.778374] (interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.800483] (-) TimerEvent: {}
+[0.900769] (-) TimerEvent: {}
+[0.937648] (interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.954547] (interfaces) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[0.956065] (interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[0.976958] (interfaces) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[0.977109] (interfaces) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.977153] (interfaces) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[0.977192] (interfaces) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[0.990457] (interfaces) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[1.000939] (-) TimerEvent: {}
+[1.022563] (interfaces) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.033423] (interfaces) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.033962] (interfaces) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.035478] (interfaces) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.052776] (interfaces) StdoutLine: {'line': b'-- Generating done\n'}
+[1.054018] (interfaces) StdoutLine: {'line': b'-- Build files have been written to: /home/sami/session7/build/interfaces\n'}
+[1.059700] (interfaces) CommandEnded: {'returncode': 0}
+[1.059987] (interfaces) JobProgress: {'identifier': 'interfaces', 'progress': 'build'}
+[1.060008] (interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/sami/session7/build/interfaces', '--', '-j8', '-l8'], 'cwd': '/home/sami/session7/build/interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'sami'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/sami'), ('OLDPWD', '/home/sami/session7/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2942'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=d1fae2888015e5f6e0192dbc66a76e66'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/sami/session7-ros2/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'sami'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'sami'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/sami/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/sami-ThinkBook-15-G2-ITL:@/tmp/.ICE-unix/2942,unix/sami-ThinkBook-15-G2-ITL:/tmp/.ICE-unix/2942'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/9aeb33c3_b72a_4cfb_ba4e_4298ecfd7e62'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.ZKZXR2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.653'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/sami/session7-ros2/install/walldetector:/home/sami/session7-ros2/install/interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/sami/session7/build/interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=d1fae2888015e5f6e0192dbc66a76e66'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/sami/session7-ros2/install/walldetector/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/sami/session7-ros2/install/interfaces:/home/sami/session7-ros2/install/walldetector:/opt/ros/humble')]), 'shell': False}
+[1.085276] (interfaces) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[1.092113] (interfaces) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[1.097887] (interfaces) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_copy_interfaces\n'}
+[1.101032] (-) TimerEvent: {}
+[1.201308] (-) TimerEvent: {}
+[1.253022] (interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[1.253320] (interfaces) StdoutLine: {'line': b'creating interfaces.egg-info\n'}
+[1.253431] (interfaces) StdoutLine: {'line': b'writing interfaces.egg-info/PKG-INFO\n'}
+[1.253577] (interfaces) StdoutLine: {'line': b'writing dependency_links to interfaces.egg-info/dependency_links.txt\n'}
+[1.253663] (interfaces) StdoutLine: {'line': b'writing top-level names to interfaces.egg-info/top_level.txt\n'}
+[1.253777] (interfaces) StdoutLine: {'line': b"writing manifest file 'interfaces.egg-info/SOURCES.txt'\n"}
+[1.254979] (interfaces) StdoutLine: {'line': b"reading manifest file 'interfaces.egg-info/SOURCES.txt'\n"}
+[1.255304] (interfaces) StdoutLine: {'line': b"writing manifest file 'interfaces.egg-info/SOURCES.txt'\n"}
+[1.273241] (interfaces) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_build_interfaces_egg\n'}
+[1.301395] (-) TimerEvent: {}
+[1.401633] (-) TimerEvent: {}
+[1.438584] (interfaces) StdoutLine: {'line': b'[  5%] Built target interfaces__cpp\n'}
+[1.445380] (interfaces) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[1.445627] (interfaces) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[1.445698] (interfaces) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[1.457761] (interfaces) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding C object CMakeFiles/interfaces__rosidl_generator_c.dir/rosidl_generator_c/interfaces/action/detail/lap_time__functions.c.o\x1b[0m\n'}
+[1.460115] (interfaces) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/interfaces__rosidl_generator_c.dir/rosidl_generator_c/interfaces/srv/detail/find_closest_wall__functions.c.o\x1b[0m\n'}
+[1.501739] (-) TimerEvent: {}
+[1.552286] (interfaces) StdoutLine: {'line': b'[ 20%] \x1b[32m\x1b[1mLinking C shared library libinterfaces__rosidl_generator_c.so\x1b[0m\n'}
+[1.576698] (interfaces) StdoutLine: {'line': b'[ 20%] Built target interfaces__rosidl_generator_c\n'}
+[1.585140] (interfaces) StdoutLine: {'line': b'[ 23%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[1.585395] (interfaces) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[1.585606] (interfaces) StdoutLine: {'line': b'[ 28%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[1.601833] (-) TimerEvent: {}
+[1.702207] (-) TimerEvent: {}
+[1.707856] (interfaces) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interfaces/srv/find_closest_wall__type_support.cpp.o\x1b[0m\n'}
+[1.709635] (interfaces) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interfaces/action/lap_time__type_support.cpp.o\x1b[0m\n'}
+[1.802309] (-) TimerEvent: {}
+[1.810346] (interfaces) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interfaces/srv/detail/dds_fastrtps/find_closest_wall__type_support.cpp.o\x1b[0m\n'}
+[1.810579] (interfaces) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interfaces/action/detail/dds_fastrtps/lap_time__type_support.cpp.o\x1b[0m\n'}
+[1.902396] (-) TimerEvent: {}
+[1.904930] (interfaces) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interfaces/action/detail/lap_time__type_support.cpp.o\x1b[0m\n'}
+[2.002506] (-) TimerEvent: {}
+[2.005030] (interfaces) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interfaces/srv/detail/find_closest_wall__type_support.cpp.o\x1b[0m\n'}
+[2.039178] (interfaces) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/interfaces/action/lap_time__type_support.cpp.o\x1b[0m\n'}
+[2.095489] (interfaces) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/interfaces/srv/find_closest_wall__type_support.cpp.o\x1b[0m\n'}
+[2.102622] (-) TimerEvent: {}
+[2.132289] (interfaces) StdoutLine: {'line': b'[ 51%] \x1b[32m\x1b[1mLinking CXX shared library libinterfaces__rosidl_typesupport_c.so\x1b[0m\n'}
+[2.202813] (-) TimerEvent: {}
+[2.204142] (interfaces) StdoutLine: {'line': b'[ 51%] Built target interfaces__rosidl_typesupport_c\n'}
+[2.227544] (interfaces) StdoutLine: {'line': b'[ 53%] \x1b[32m\x1b[1mLinking CXX shared library libinterfaces__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[2.254982] (interfaces) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interfaces/srv/detail/find_closest_wall__type_support_c.cpp.o\x1b[0m\n'}
+[2.255361] (interfaces) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interfaces/action/detail/lap_time__type_support_c.cpp.o\x1b[0m\n'}
+[2.262674] (interfaces) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding C object CMakeFiles/interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interfaces/action/detail/lap_time__type_support.c.o\x1b[0m\n'}
+[2.275737] (interfaces) StdoutLine: {'line': b'[ 61%] Built target interfaces__rosidl_typesupport_cpp\n'}
+[2.280179] (interfaces) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding C object CMakeFiles/interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interfaces/srv/detail/find_closest_wall__type_support.c.o\x1b[0m\n'}
+[2.302945] (-) TimerEvent: {}
+[2.313747] (interfaces) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking C shared library libinterfaces__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[2.342518] (interfaces) StdoutLine: {'line': b'[ 66%] Built target interfaces__rosidl_typesupport_introspection_c\n'}
+[2.403055] (-) TimerEvent: {}
+[2.436565] (interfaces) StdoutLine: {'line': b'[ 69%] \x1b[32m\x1b[1mLinking CXX shared library libinterfaces__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[2.495754] (interfaces) StdoutLine: {'line': b'[ 69%] Built target interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[2.503184] (-) TimerEvent: {}
+[2.527186] (interfaces) StdoutLine: {'line': b'[ 71%] \x1b[32m\x1b[1mLinking CXX shared library libinterfaces__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[2.576079] (interfaces) StdoutLine: {'line': b'[ 71%] Built target interfaces__rosidl_typesupport_introspection_cpp\n'}
+[2.594562] (interfaces) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking CXX shared library libinterfaces__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[2.603296] (-) TimerEvent: {}
+[2.643530] (interfaces) StdoutLine: {'line': b'[ 74%] Built target interfaces__rosidl_typesupport_fastrtps_c\n'}
+[2.655951] (interfaces) StdoutLine: {'line': b'[ 74%] Built target interfaces\n'}
+[2.669178] (interfaces) StdoutLine: {'line': b'[ 76%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[2.703411] (-) TimerEvent: {}
+[2.803721] (-) TimerEvent: {}
+[2.903969] (-) TimerEvent: {}
+[3.004278] (-) TimerEvent: {}
+[3.104581] (-) TimerEvent: {}
+[3.204885] (-) TimerEvent: {}
+[3.257166] (interfaces) StdoutLine: {'line': b'[ 76%] Built target interfaces__py\n'}
+[3.269695] (interfaces) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/interfaces__rosidl_generator_py.dir/rosidl_generator_py/interfaces/srv/_find_closest_wall_s.c.o\x1b[0m\n'}
+[3.269849] (interfaces) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/interfaces__rosidl_generator_py.dir/rosidl_generator_py/interfaces/action/_lap_time_s.c.o\x1b[0m\n'}
+[3.305120] (-) TimerEvent: {}
+[3.358145] (interfaces) StdoutLine: {'line': b'[ 84%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/interfaces/libinterfaces__rosidl_generator_py.so\x1b[0m\n'}
+[3.384554] (interfaces) StdoutLine: {'line': b'[ 84%] Built target interfaces__rosidl_generator_py\n'}
+[3.398584] (interfaces) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/interfaces/_interfaces_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[3.398789] (interfaces) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/interfaces/_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[3.398857] (interfaces) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/interfaces/_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[3.405211] (-) TimerEvent: {}
+[3.483865] (interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/interfaces/interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[3.484105] (interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/interfaces/interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[3.484156] (interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/interfaces/interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[3.505331] (-) TimerEvent: {}
+[3.511838] (interfaces) StdoutLine: {'line': b'[100%] Built target interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[3.512014] (interfaces) StdoutLine: {'line': b'[100%] Built target interfaces__rosidl_typesupport_c__pyext\n'}
+[3.512065] (interfaces) StdoutLine: {'line': b'[100%] Built target interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[3.520150] (interfaces) CommandEnded: {'returncode': 0}
+[3.561694] (interfaces) JobProgress: {'identifier': 'interfaces', 'progress': 'install'}
+[3.568165] (interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/sami/session7/build/interfaces'], 'cwd': '/home/sami/session7/build/interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'sami'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/sami'), ('OLDPWD', '/home/sami/session7/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2942'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=d1fae2888015e5f6e0192dbc66a76e66'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/sami/session7-ros2/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'sami'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'sami'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/sami/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/sami-ThinkBook-15-G2-ITL:@/tmp/.ICE-unix/2942,unix/sami-ThinkBook-15-G2-ITL:/tmp/.ICE-unix/2942'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/9aeb33c3_b72a_4cfb_ba4e_4298ecfd7e62'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.ZKZXR2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.653'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/sami/session7-ros2/install/walldetector:/home/sami/session7-ros2/install/interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/sami/session7/build/interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=d1fae2888015e5f6e0192dbc66a76e66'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/sami/session7-ros2/install/walldetector/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/sami/session7-ros2/install/interfaces:/home/sami/session7-ros2/install/walldetector:/opt/ros/humble')]), 'shell': False}
+[3.573286] (interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[3.573498] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/share/ament_index/resource_index/rosidl_interfaces/interfaces\n'}
+[3.573584] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/include/interfaces/interfaces\n'}
+[3.573663] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/include/interfaces/interfaces/srv\n'}
+[3.573731] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/include/interfaces/interfaces/srv/detail\n'}
+[3.573771] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/include/interfaces/interfaces/srv/detail/find_closest_wall__type_support.h\n'}
+[3.573830] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/include/interfaces/interfaces/srv/detail/find_closest_wall__functions.c\n'}
+[3.573886] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/include/interfaces/interfaces/srv/detail/find_closest_wall__struct.h\n'}
+[3.573944] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/include/interfaces/interfaces/srv/detail/find_closest_wall__functions.h\n'}
+[3.573999] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/include/interfaces/interfaces/srv/find_closest_wall.h\n'}
+[3.574047] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/include/interfaces/interfaces/action\n'}
+[3.574102] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/include/interfaces/interfaces/action/lap_time.h\n'}
+[3.574150] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/include/interfaces/interfaces/action/detail\n'}
+[3.574202] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/include/interfaces/interfaces/action/detail/lap_time__struct.h\n'}
+[3.574251] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/include/interfaces/interfaces/action/detail/lap_time__functions.c\n'}
+[3.574439] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/include/interfaces/interfaces/action/detail/lap_time__functions.h\n'}
+[3.574527] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/include/interfaces/interfaces/action/detail/lap_time__type_support.h\n'}
+[3.574585] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/include/interfaces/interfaces/msg\n'}
+[3.574644] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/include/interfaces/interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[3.574743] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/share/interfaces/environment/library_path.sh\n'}
+[3.574851] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/share/interfaces/environment/library_path.dsv\n'}
+[3.574908] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/lib/libinterfaces__rosidl_generator_c.so\n'}
+[3.575101] (interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/sami/session7/install/interfaces/lib/libinterfaces__rosidl_generator_c.so" to ""\n'}
+[3.575169] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sami/session7/install/interfaces/include/interfaces/interfaces\n'}
+[3.575209] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sami/session7/install/interfaces/include/interfaces/interfaces/srv\n'}
+[3.575263] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sami/session7/install/interfaces/include/interfaces/interfaces/srv/detail\n'}
+[3.575318] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/include/interfaces/interfaces/srv/detail/find_closest_wall__rosidl_typesupport_fastrtps_c.h\n'}
+[3.575381] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sami/session7/install/interfaces/include/interfaces/interfaces/action\n'}
+[3.575431] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sami/session7/install/interfaces/include/interfaces/interfaces/action/detail\n'}
+[3.575468] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/include/interfaces/interfaces/action/detail/lap_time__rosidl_typesupport_fastrtps_c.h\n'}
+[3.575505] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sami/session7/install/interfaces/include/interfaces/interfaces/msg\n'}
+[3.575569] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/include/interfaces/interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[3.575605] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/lib/libinterfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[3.575730] (interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/sami/session7/install/interfaces/lib/libinterfaces__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[3.575796] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sami/session7/install/interfaces/include/interfaces/interfaces\n'}
+[3.575834] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sami/session7/install/interfaces/include/interfaces/interfaces/srv\n'}
+[3.575890] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sami/session7/install/interfaces/include/interfaces/interfaces/srv/detail\n'}
+[3.575928] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/include/interfaces/interfaces/srv/detail/find_closest_wall__rosidl_typesupport_introspection_c.h\n'}
+[3.575997] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/include/interfaces/interfaces/srv/detail/find_closest_wall__type_support.c\n'}
+[3.576035] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sami/session7/install/interfaces/include/interfaces/interfaces/action\n'}
+[3.576070] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sami/session7/install/interfaces/include/interfaces/interfaces/action/detail\n'}
+[3.576107] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/include/interfaces/interfaces/action/detail/lap_time__type_support.c\n'}
+[3.576173] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/include/interfaces/interfaces/action/detail/lap_time__rosidl_typesupport_introspection_c.h\n'}
+[3.576211] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sami/session7/install/interfaces/include/interfaces/interfaces/msg\n'}
+[3.576245] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/include/interfaces/interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[3.576304] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/lib/libinterfaces__rosidl_typesupport_introspection_c.so\n'}
+[3.576448] (interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/sami/session7/install/interfaces/lib/libinterfaces__rosidl_typesupport_introspection_c.so" to ""\n'}
+[3.576506] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/lib/libinterfaces__rosidl_typesupport_c.so\n'}
+[3.576644] (interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/sami/session7/install/interfaces/lib/libinterfaces__rosidl_typesupport_c.so" to ""\n'}
+[3.576704] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sami/session7/install/interfaces/include/interfaces/interfaces\n'}
+[3.576742] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sami/session7/install/interfaces/include/interfaces/interfaces/srv\n'}
+[3.576803] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sami/session7/install/interfaces/include/interfaces/interfaces/srv/detail\n'}
+[3.576852] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/include/interfaces/interfaces/srv/detail/find_closest_wall__builder.hpp\n'}
+[3.576899] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/include/interfaces/interfaces/srv/detail/find_closest_wall__struct.hpp\n'}
+[3.576935] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/include/interfaces/interfaces/srv/detail/find_closest_wall__traits.hpp\n'}
+[3.576989] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/include/interfaces/interfaces/srv/find_closest_wall.hpp\n'}
+[3.577051] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sami/session7/install/interfaces/include/interfaces/interfaces/action\n'}
+[3.577088] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/include/interfaces/interfaces/action/lap_time.hpp\n'}
+[3.577138] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sami/session7/install/interfaces/include/interfaces/interfaces/action/detail\n'}
+[3.577193] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/include/interfaces/interfaces/action/detail/lap_time__struct.hpp\n'}
+[3.577247] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/include/interfaces/interfaces/action/detail/lap_time__builder.hpp\n'}
+[3.577301] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/include/interfaces/interfaces/action/detail/lap_time__traits.hpp\n'}
+[3.577388] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sami/session7/install/interfaces/include/interfaces/interfaces\n'}
+[3.577442] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sami/session7/install/interfaces/include/interfaces/interfaces/srv\n'}
+[3.577508] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sami/session7/install/interfaces/include/interfaces/interfaces/srv/detail\n'}
+[3.577545] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/include/interfaces/interfaces/srv/detail/dds_fastrtps\n'}
+[3.577581] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/include/interfaces/interfaces/srv/detail/find_closest_wall__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.577646] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sami/session7/install/interfaces/include/interfaces/interfaces/action\n'}
+[3.577684] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sami/session7/install/interfaces/include/interfaces/interfaces/action/detail\n'}
+[3.577721] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/include/interfaces/interfaces/action/detail/dds_fastrtps\n'}
+[3.577777] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/include/interfaces/interfaces/action/detail/lap_time__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.577837] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sami/session7/install/interfaces/include/interfaces/interfaces/msg\n'}
+[3.577875] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/include/interfaces/interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[3.577929] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/lib/libinterfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[3.578059] (interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/sami/session7/install/interfaces/lib/libinterfaces__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[3.578116] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sami/session7/install/interfaces/include/interfaces/interfaces\n'}
+[3.578153] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sami/session7/install/interfaces/include/interfaces/interfaces/srv\n'}
+[3.578214] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sami/session7/install/interfaces/include/interfaces/interfaces/srv/detail\n'}
+[3.578261] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/include/interfaces/interfaces/srv/detail/find_closest_wall__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.578298] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/include/interfaces/interfaces/srv/detail/find_closest_wall__type_support.cpp\n'}
+[3.578969] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sami/session7/install/interfaces/include/interfaces/interfaces/action\n'}
+[3.579081] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sami/session7/install/interfaces/include/interfaces/interfaces/action/detail\n'}
+[3.579122] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/include/interfaces/interfaces/action/detail/lap_time__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.579160] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/include/interfaces/interfaces/action/detail/lap_time__type_support.cpp\n'}
+[3.579216] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/lib/libinterfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[3.579256] (interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/sami/session7/install/interfaces/lib/libinterfaces__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[3.579293] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/lib/libinterfaces__rosidl_typesupport_cpp.so\n'}
+[3.579330] (interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/sami/session7/install/interfaces/lib/libinterfaces__rosidl_typesupport_cpp.so" to ""\n'}
+[3.579367] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/share/interfaces/environment/pythonpath.sh\n'}
+[3.579403] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/share/interfaces/environment/pythonpath.dsv\n'}
+[3.579440] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/local/lib/python3.10/dist-packages/interfaces-0.0.0-py3.10.egg-info\n'}
+[3.579477] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/local/lib/python3.10/dist-packages/interfaces-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[3.579555] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/local/lib/python3.10/dist-packages/interfaces-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[3.579593] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/local/lib/python3.10/dist-packages/interfaces-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[3.579632] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/local/lib/python3.10/dist-packages/interfaces-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[3.579669] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/local/lib/python3.10/dist-packages/interfaces\n'}
+[3.579706] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/local/lib/python3.10/dist-packages/interfaces/srv\n'}
+[3.579741] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/local/lib/python3.10/dist-packages/interfaces/srv/_find_closest_wall.py\n'}
+[3.579797] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/local/lib/python3.10/dist-packages/interfaces/srv/__init__.py\n'}
+[3.579856] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/local/lib/python3.10/dist-packages/interfaces/srv/_find_closest_wall_s.c\n'}
+[3.579891] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.579928] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.579985] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/local/lib/python3.10/dist-packages/interfaces/_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[3.580039] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/local/lib/python3.10/dist-packages/interfaces/action\n'}
+[3.580094] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/local/lib/python3.10/dist-packages/interfaces/action/_lap_time_s.c\n'}
+[3.580145] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/local/lib/python3.10/dist-packages/interfaces/action/_lap_time.py\n'}
+[3.580226] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/local/lib/python3.10/dist-packages/interfaces/action/__init__.py\n'}
+[3.580282] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/local/lib/python3.10/dist-packages/interfaces/_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[3.580396] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/local/lib/python3.10/dist-packages/interfaces/_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[3.580485] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.580562] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/local/lib/python3.10/dist-packages/interfaces/__init__.py\n'}
+[3.580612] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/local/lib/python3.10/dist-packages/interfaces/libinterfaces__rosidl_generator_py.so\n'}
+[3.605443] (interfaces) StdoutLine: {'line': b"Listing '/home/sami/session7/install/interfaces/local/lib/python3.10/dist-packages/interfaces'...\n"}
+[3.605563] (-) TimerEvent: {}
+[3.605634] (interfaces) StdoutLine: {'line': b"Compiling '/home/sami/session7/install/interfaces/local/lib/python3.10/dist-packages/interfaces/__init__.py'...\n"}
+[3.605703] (interfaces) StdoutLine: {'line': b"Listing '/home/sami/session7/install/interfaces/local/lib/python3.10/dist-packages/interfaces/action'...\n"}
+[3.605747] (interfaces) StdoutLine: {'line': b"Compiling '/home/sami/session7/install/interfaces/local/lib/python3.10/dist-packages/interfaces/action/__init__.py'...\n"}
+[3.605785] (interfaces) StdoutLine: {'line': b"Compiling '/home/sami/session7/install/interfaces/local/lib/python3.10/dist-packages/interfaces/action/_lap_time.py'...\n"}
+[3.605822] (interfaces) StdoutLine: {'line': b"Listing '/home/sami/session7/install/interfaces/local/lib/python3.10/dist-packages/interfaces/srv'...\n"}
+[3.605859] (interfaces) StdoutLine: {'line': b"Compiling '/home/sami/session7/install/interfaces/local/lib/python3.10/dist-packages/interfaces/srv/__init__.py'...\n"}
+[3.605895] (interfaces) StdoutLine: {'line': b"Compiling '/home/sami/session7/install/interfaces/local/lib/python3.10/dist-packages/interfaces/srv/_find_closest_wall.py'...\n"}
+[3.608396] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.608501] (interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/sami/session7/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[3.608594] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.608720] (interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/sami/session7/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[3.608825] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.608997] (interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/sami/session7/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[3.609052] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/lib/libinterfaces__rosidl_generator_py.so\n'}
+[3.609221] (interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/sami/session7/install/interfaces/lib/libinterfaces__rosidl_generator_py.so" to ""\n'}
+[3.609284] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/share/interfaces/action/LapTime.idl\n'}
+[3.609377] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/share/interfaces/srv/FindClosestWall.idl\n'}
+[3.609447] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/share/interfaces/action/LapTime.action\n'}
+[3.609519] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/share/interfaces/srv/FindClosestWall.srv\n'}
+[3.609586] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/share/interfaces/srv/FindClosestWall_Request.msg\n'}
+[3.609657] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/share/interfaces/srv/FindClosestWall_Response.msg\n'}
+[3.609751] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/share/ament_index/resource_index/package_run_dependencies/interfaces\n'}
+[3.609841] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/share/ament_index/resource_index/parent_prefix_path/interfaces\n'}
+[3.609914] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/share/interfaces/environment/ament_prefix_path.sh\n'}
+[3.609987] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/share/interfaces/environment/ament_prefix_path.dsv\n'}
+[3.610057] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/share/interfaces/environment/path.sh\n'}
+[3.610127] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/share/interfaces/environment/path.dsv\n'}
+[3.610196] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/share/interfaces/local_setup.bash\n'}
+[3.610268] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/share/interfaces/local_setup.sh\n'}
+[3.610340] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/share/interfaces/local_setup.zsh\n'}
+[3.610418] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/share/interfaces/local_setup.dsv\n'}
+[3.610487] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/share/interfaces/package.dsv\n'}
+[3.610582] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/share/ament_index/resource_index/packages/interfaces\n'}
+[3.610678] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_generator_cExport.cmake\n'}
+[3.610756] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[3.610836] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[3.610910] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[3.610987] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[3.611063] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[3.611143] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_cExport.cmake\n'}
+[3.611216] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[3.611292] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_generator_cppExport.cmake\n'}
+[3.611371] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[3.611446] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[3.611524] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[3.611599] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[3.611677] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[3.611750] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[3.611828] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_generator_pyExport.cmake\n'}
+[3.611903] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[3.611978] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/share/interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[3.612051] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/share/interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[3.612129] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/share/interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[3.612198] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/share/interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[3.612272] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/share/interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[3.612343] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/share/interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[3.612414] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/share/interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[3.612483] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/share/interfaces/cmake/interfacesConfig.cmake\n'}
+[3.612541] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/share/interfaces/cmake/interfacesConfig-version.cmake\n'}
+[3.612610] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sami/session7/install/interfaces/share/interfaces/package.xml\n'}
+[3.614210] (interfaces) CommandEnded: {'returncode': 0}
+[3.665051] (interfaces) JobEnded: {'identifier': 'interfaces', 'rc': 0}
+[3.665492] (-) EventReactorShutdown: {}

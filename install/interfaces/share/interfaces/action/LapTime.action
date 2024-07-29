@@ -1,0 +1,7 @@
+# Goal definition
+---
+# Result definition
+float64 total_time
+---
+# Feedback definition
+float64 elapsed_time
