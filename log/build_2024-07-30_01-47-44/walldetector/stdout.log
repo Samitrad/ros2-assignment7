@@ -1,0 +1,47 @@
+running egg_info
+creating ../../build/walldetector/walldetector.egg-info
+writing ../../build/walldetector/walldetector.egg-info/PKG-INFO
+writing dependency_links to ../../build/walldetector/walldetector.egg-info/dependency_links.txt
+writing entry points to ../../build/walldetector/walldetector.egg-info/entry_points.txt
+writing requirements to ../../build/walldetector/walldetector.egg-info/requires.txt
+writing top-level names to ../../build/walldetector/walldetector.egg-info/top_level.txt
+writing manifest file '../../build/walldetector/walldetector.egg-info/SOURCES.txt'
+reading manifest file '../../build/walldetector/walldetector.egg-info/SOURCES.txt'
+writing manifest file '../../build/walldetector/walldetector.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/sami/session7/ros2-assignment7/build/walldetector/build
+creating /home/sami/session7/ros2-assignment7/build/walldetector/build/lib
+creating /home/sami/session7/ros2-assignment7/build/walldetector/build/lib/walldetector
+copying walldetector/follower.py -> /home/sami/session7/ros2-assignment7/build/walldetector/build/lib/walldetector
+copying walldetector/finder.py -> /home/sami/session7/ros2-assignment7/build/walldetector/build/lib/walldetector
+copying walldetector/__init__.py -> /home/sami/session7/ros2-assignment7/build/walldetector/build/lib/walldetector
+copying walldetector/laptime_server.py -> /home/sami/session7/ros2-assignment7/build/walldetector/build/lib/walldetector
+copying walldetector/laptime_client.py -> /home/sami/session7/ros2-assignment7/build/walldetector/build/lib/walldetector
+running install
+running install_lib
+creating /home/sami/session7/ros2-assignment7/install/walldetector/lib/python3.10/site-packages/walldetector
+copying /home/sami/session7/ros2-assignment7/build/walldetector/build/lib/walldetector/follower.py -> /home/sami/session7/ros2-assignment7/install/walldetector/lib/python3.10/site-packages/walldetector
+copying /home/sami/session7/ros2-assignment7/build/walldetector/build/lib/walldetector/finder.py -> /home/sami/session7/ros2-assignment7/install/walldetector/lib/python3.10/site-packages/walldetector
+copying /home/sami/session7/ros2-assignment7/build/walldetector/build/lib/walldetector/__init__.py -> /home/sami/session7/ros2-assignment7/install/walldetector/lib/python3.10/site-packages/walldetector
+copying /home/sami/session7/ros2-assignment7/build/walldetector/build/lib/walldetector/laptime_server.py -> /home/sami/session7/ros2-assignment7/install/walldetector/lib/python3.10/site-packages/walldetector
+copying /home/sami/session7/ros2-assignment7/build/walldetector/build/lib/walldetector/laptime_client.py -> /home/sami/session7/ros2-assignment7/install/walldetector/lib/python3.10/site-packages/walldetector
+byte-compiling /home/sami/session7/ros2-assignment7/install/walldetector/lib/python3.10/site-packages/walldetector/follower.py to follower.cpython-310.pyc
+byte-compiling /home/sami/session7/ros2-assignment7/install/walldetector/lib/python3.10/site-packages/walldetector/finder.py to finder.cpython-310.pyc
+byte-compiling /home/sami/session7/ros2-assignment7/install/walldetector/lib/python3.10/site-packages/walldetector/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/sami/session7/ros2-assignment7/install/walldetector/lib/python3.10/site-packages/walldetector/laptime_server.py to laptime_server.cpython-310.pyc
+byte-compiling /home/sami/session7/ros2-assignment7/install/walldetector/lib/python3.10/site-packages/walldetector/laptime_client.py to laptime_client.cpython-310.pyc
+running install_data
+creating /home/sami/session7/ros2-assignment7/install/walldetector/share/ament_index
+creating /home/sami/session7/ros2-assignment7/install/walldetector/share/ament_index/resource_index
+creating /home/sami/session7/ros2-assignment7/install/walldetector/share/ament_index/resource_index/packages
+copying resource/walldetector -> /home/sami/session7/ros2-assignment7/install/walldetector/share/ament_index/resource_index/packages
+copying package.xml -> /home/sami/session7/ros2-assignment7/install/walldetector/share/walldetector
+running install_egg_info
+Copying ../../build/walldetector/walldetector.egg-info to /home/sami/session7/ros2-assignment7/install/walldetector/lib/python3.10/site-packages/walldetector-0.0.0-py3.10.egg-info
+running install_scripts
+Installing finder script to /home/sami/session7/ros2-assignment7/install/walldetector/lib/walldetector
+Installing follower script to /home/sami/session7/ros2-assignment7/install/walldetector/lib/walldetector
+Installing laptime_client script to /home/sami/session7/ros2-assignment7/install/walldetector/lib/walldetector
+Installing laptime_server script to /home/sami/session7/ros2-assignment7/install/walldetector/lib/walldetector
+writing list of installed files to '/home/sami/session7/ros2-assignment7/build/walldetector/install.log'

@@ -1,7 +1,7 @@
 {
   "package_name": "interfaces",
   "non_idl_tuples": [
-    "/home/sami/session7/src/interfaces:action/LapTime.action",
-    "/home/sami/session7/src/interfaces:srv/FindClosestWall.srv"
+    "/home/sami/session7/ros2-assignment7/src/interfaces:action/LapTime.action",
+    "/home/sami/session7/ros2-assignment7/src/interfaces:srv/FindClosestWall.srv"
   ]
 }

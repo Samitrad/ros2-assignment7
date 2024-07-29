@@ -1,24 +1,20 @@
 import rclpy
 from rclpy.node import Node
 from geometry_msgs.msg import Twist
-from interfaces.srv import FindClosestWall
 from sensor_msgs.msg import LaserScan
+from interfaces.srv import FindClosestWall
 
 class WallFinderService(Node):
     def __init__(self):
         super().__init__('wall_finder_service')
         
-        # Create a service
         self.service = self.create_service(
             FindClosestWall,
             'find_closest_wall',
             self.handle_find_closest_wall
         )
         
-        # Create a publisher for cmd_vel
         self.cmd_vel_pub = self.create_publisher(Twist, '/cmd_vel', 10)
-        
-        # Create a subscription for laser scan data
         self.scan_sub = self.create_subscription(
             LaserScan,
             '/scan',
@@ -26,44 +22,72 @@ class WallFinderService(Node):
             10
         )
 
-        # Initialize Twist message and distance variable
         self.twist = Twist()
-        self.distance = float('inf')
+        self.closest_distance = float('inf')
+        self.moving_to_wall = False
+        self.timer = None  # Initialize timer as None
+        self.target_distance = 0.5  # Desired distance from the wall
         self.get_logger().info('Service Started')
 
     def handle_find_closest_wall(self, request, response):
-        # Start moving forward
-        self.twist.linear.x = 0.5
-        self.cmd_vel_pub.publish(self.twist)
+        if self.moving_to_wall:
+            response.success = False
+            response.message = 'Already moving to the wall'
+            return response
         
-        # Create a timer to periodically check the distance
-        self.timer = self.create_timer(0.1, self.check_distance)
-        self.get_logger().info('Moving forward to find the wall')
+        self.moving_to_wall = True
+        self.get_logger().info('Received request to follow the wall')
         
-        # Set the response to true to indicate the service call was received
+        # Ensure timer is created only once
+        if self.timer is None:
+            self.timer = self.create_timer(0.1, self.check_distance)
+        
         response.success = True
+        response.message = 'Following the wall'
         return response
 
     def check_distance(self):
-        # Check the distance and stop if needed
-        if self.distance <= 0.5:
-            self.twist.linear.x = 0.0
+        if self.moving_to_wall:
+            if self.closest_distance <= self.target_distance + 0.05 and self.closest_distance >= self.target_distance - 0.05:
+                # Move forward if within the target distance range
+                self.twist.linear.x = 0.2
+                self.twist.angular.z = 0.0
+            elif self.closest_distance < self.target_distance:
+                # Turn away from the wall if too close
+                self.twist.linear.x = 0.0
+                self.twist.angular.z = 0.5
+            elif self.closest_distance > self.target_distance:
+                # Turn towards the wall if too far
+                self.twist.linear.x = 0.2
+                self.twist.angular.z = -0.5
+            
             self.cmd_vel_pub.publish(self.twist)
-            self.get_logger().info('Stopped, wall detected')
-            self.timer.cancel()  # Stop the timer
+            self.get_logger().info(f'Following wall. Distance: {self.closest_distance}, Linear Velocity: {self.twist.linear.x}, Angular Velocity: {self.twist.angular.z}')
+        else:
+            # Stop the robot if not in wall-following mode
+            self.twist.linear.x = 0.0
+            self.twist.angular.z = 0.0
+            self.cmd_vel_pub.publish(self.twist)
+            if self.timer:
+                self.timer.cancel()
+                self.timer = None
 
     def scan_callback(self, msg):
-        # Ensure msg.ranges is not empty and get the minimum distance
-        if len(msg.ranges) > 0:
-            self.distance = min(msg.ranges)
-        self.get_logger().info(f"Distance: {self.distance}")
+        # Handle cases where msg.ranges may contain invalid data
+        valid_ranges = [r for r in msg.ranges if r > 0 and r < float('inf')]
+        if valid_ranges:
+            self.closest_distance = min(valid_ranges)
+        else:
+            self.closest_distance = float('inf')
+        self.get_logger().info(f"Closest Distance: {self.closest_distance}")
 
 def main(args=None):
     rclpy.init(args=args)
-    wall_finder_service = WallFinderService()
-    rclpy.spin(wall_finder_service)
-    wall_finder_service.destroy_node()
+    node = WallFinderService()
+    rclpy.spin(node)
+    node.destroy_node()
     rclpy.shutdown()
 
 if __name__ == '__main__':
     main()
+

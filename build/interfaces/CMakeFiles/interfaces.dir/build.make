@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/sami/session7/src/interfaces
+CMAKE_SOURCE_DIR = /home/sami/session7/ros2-assignment7/src/interfaces
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sami/session7/build/interfaces
+CMAKE_BINARY_DIR = /home/sami/session7/ros2-assignment7/build/interfaces
 
 # Utility rule file for interfaces.
 
@@ -66,8 +66,8 @@ include CMakeFiles/interfaces.dir/compiler_depend.make
 # Include the progress variables for this target.
 include CMakeFiles/interfaces.dir/progress.make
 
-CMakeFiles/interfaces: /home/sami/session7/src/interfaces/action/LapTime.action
-CMakeFiles/interfaces: /home/sami/session7/src/interfaces/srv/FindClosestWall.srv
+CMakeFiles/interfaces: /home/sami/session7/ros2-assignment7/src/interfaces/action/LapTime.action
+CMakeFiles/interfaces: /home/sami/session7/ros2-assignment7/src/interfaces/srv/FindClosestWall.srv
 CMakeFiles/interfaces: rosidl_cmake/srv/FindClosestWall_Request.msg
 CMakeFiles/interfaces: rosidl_cmake/srv/FindClosestWall_Response.msg
 CMakeFiles/interfaces: /opt/ros/humble/share/action_msgs/msg/GoalInfo.idl
@@ -88,6 +88,6 @@ CMakeFiles/interfaces.dir/clean:
 .PHONY : CMakeFiles/interfaces.dir/clean
 
 CMakeFiles/interfaces.dir/depend:
-	cd /home/sami/session7/build/interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sami/session7/src/interfaces /home/sami/session7/src/interfaces /home/sami/session7/build/interfaces /home/sami/session7/build/interfaces /home/sami/session7/build/interfaces/CMakeFiles/interfaces.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/sami/session7/ros2-assignment7/build/interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sami/session7/ros2-assignment7/src/interfaces /home/sami/session7/ros2-assignment7/src/interfaces /home/sami/session7/ros2-assignment7/build/interfaces /home/sami/session7/ros2-assignment7/build/interfaces /home/sami/session7/ros2-assignment7/build/interfaces/CMakeFiles/interfaces.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/interfaces.dir/depend
 

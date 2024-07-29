@@ -1,10 +1,10 @@
 {
   "package_name": "interfaces",
-  "output_dir": "/home/sami/session7/build/interfaces/rosidl_typesupport_introspection_c/interfaces",
+  "output_dir": "/home/sami/session7/ros2-assignment7/build/interfaces/rosidl_typesupport_introspection_c/interfaces",
   "template_dir": "/opt/ros/humble/share/rosidl_typesupport_introspection_c/resource",
   "idl_tuples": [
-    "/home/sami/session7/build/interfaces/rosidl_adapter/interfaces:action/LapTime.idl",
-    "/home/sami/session7/build/interfaces/rosidl_adapter/interfaces:srv/FindClosestWall.idl"
+    "/home/sami/session7/ros2-assignment7/build/interfaces/rosidl_adapter/interfaces:action/LapTime.idl",
+    "/home/sami/session7/ros2-assignment7/build/interfaces/rosidl_adapter/interfaces:srv/FindClosestWall.idl"
   ],
   "ros_interface_dependencies": [
     "action_msgs:/opt/ros/humble/share/action_msgs/msg/GoalInfo.idl",
@@ -24,8 +24,8 @@
     "/opt/ros/humble/share/rosidl_typesupport_introspection_c/resource/msg__type_support.c.em",
     "/opt/ros/humble/share/rosidl_typesupport_introspection_c/resource/srv__rosidl_typesupport_introspection_c.h.em",
     "/opt/ros/humble/share/rosidl_typesupport_introspection_c/resource/srv__type_support.c.em",
-    "/home/sami/session7/build/interfaces/rosidl_adapter/interfaces/action/LapTime.idl",
-    "/home/sami/session7/build/interfaces/rosidl_adapter/interfaces/srv/FindClosestWall.idl",
+    "/home/sami/session7/ros2-assignment7/build/interfaces/rosidl_adapter/interfaces/action/LapTime.idl",
+    "/home/sami/session7/ros2-assignment7/build/interfaces/rosidl_adapter/interfaces/srv/FindClosestWall.idl",
     "/opt/ros/humble/share/action_msgs/msg/GoalInfo.idl",
     "/opt/ros/humble/share/action_msgs/msg/GoalStatus.idl",
     "/opt/ros/humble/share/action_msgs/msg/GoalStatusArray.idl",

@@ -1,0 +1,49 @@
+[0.416s] Invoking command in '/home/sami/session7/ros2-assignment7/src/walldetector': PYTHONPATH=/home/sami/session7/ros2-assignment7/build/walldetector/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sami/session7/ros2-assignment7/install/walldetector/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/walldetector build --build-base /home/sami/session7/ros2-assignment7/build/walldetector/build install --record /home/sami/session7/ros2-assignment7/build/walldetector/install.log --single-version-externally-managed install_data
+[0.576s] running egg_info
+[0.576s] creating ../../build/walldetector/walldetector.egg-info
+[0.576s] writing ../../build/walldetector/walldetector.egg-info/PKG-INFO
+[0.577s] writing dependency_links to ../../build/walldetector/walldetector.egg-info/dependency_links.txt
+[0.577s] writing entry points to ../../build/walldetector/walldetector.egg-info/entry_points.txt
+[0.577s] writing requirements to ../../build/walldetector/walldetector.egg-info/requires.txt
+[0.577s] writing top-level names to ../../build/walldetector/walldetector.egg-info/top_level.txt
+[0.577s] writing manifest file '../../build/walldetector/walldetector.egg-info/SOURCES.txt'
+[0.578s] reading manifest file '../../build/walldetector/walldetector.egg-info/SOURCES.txt'
+[0.578s] writing manifest file '../../build/walldetector/walldetector.egg-info/SOURCES.txt'
+[0.578s] running build
+[0.578s] running build_py
+[0.579s] creating /home/sami/session7/ros2-assignment7/build/walldetector/build
+[0.579s] creating /home/sami/session7/ros2-assignment7/build/walldetector/build/lib
+[0.579s] creating /home/sami/session7/ros2-assignment7/build/walldetector/build/lib/walldetector
+[0.579s] copying walldetector/follower.py -> /home/sami/session7/ros2-assignment7/build/walldetector/build/lib/walldetector
+[0.579s] copying walldetector/finder.py -> /home/sami/session7/ros2-assignment7/build/walldetector/build/lib/walldetector
+[0.579s] copying walldetector/__init__.py -> /home/sami/session7/ros2-assignment7/build/walldetector/build/lib/walldetector
+[0.579s] copying walldetector/laptime_server.py -> /home/sami/session7/ros2-assignment7/build/walldetector/build/lib/walldetector
+[0.579s] copying walldetector/laptime_client.py -> /home/sami/session7/ros2-assignment7/build/walldetector/build/lib/walldetector
+[0.579s] running install
+[0.579s] running install_lib
+[0.580s] creating /home/sami/session7/ros2-assignment7/install/walldetector/lib/python3.10/site-packages/walldetector
+[0.580s] copying /home/sami/session7/ros2-assignment7/build/walldetector/build/lib/walldetector/follower.py -> /home/sami/session7/ros2-assignment7/install/walldetector/lib/python3.10/site-packages/walldetector
+[0.580s] copying /home/sami/session7/ros2-assignment7/build/walldetector/build/lib/walldetector/finder.py -> /home/sami/session7/ros2-assignment7/install/walldetector/lib/python3.10/site-packages/walldetector
+[0.580s] copying /home/sami/session7/ros2-assignment7/build/walldetector/build/lib/walldetector/__init__.py -> /home/sami/session7/ros2-assignment7/install/walldetector/lib/python3.10/site-packages/walldetector
+[0.580s] copying /home/sami/session7/ros2-assignment7/build/walldetector/build/lib/walldetector/laptime_server.py -> /home/sami/session7/ros2-assignment7/install/walldetector/lib/python3.10/site-packages/walldetector
+[0.580s] copying /home/sami/session7/ros2-assignment7/build/walldetector/build/lib/walldetector/laptime_client.py -> /home/sami/session7/ros2-assignment7/install/walldetector/lib/python3.10/site-packages/walldetector
+[0.580s] byte-compiling /home/sami/session7/ros2-assignment7/install/walldetector/lib/python3.10/site-packages/walldetector/follower.py to follower.cpython-310.pyc
+[0.581s] byte-compiling /home/sami/session7/ros2-assignment7/install/walldetector/lib/python3.10/site-packages/walldetector/finder.py to finder.cpython-310.pyc
+[0.581s] byte-compiling /home/sami/session7/ros2-assignment7/install/walldetector/lib/python3.10/site-packages/walldetector/__init__.py to __init__.cpython-310.pyc
+[0.581s] byte-compiling /home/sami/session7/ros2-assignment7/install/walldetector/lib/python3.10/site-packages/walldetector/laptime_server.py to laptime_server.cpython-310.pyc
+[0.581s] byte-compiling /home/sami/session7/ros2-assignment7/install/walldetector/lib/python3.10/site-packages/walldetector/laptime_client.py to laptime_client.cpython-310.pyc
+[0.581s] running install_data
+[0.582s] creating /home/sami/session7/ros2-assignment7/install/walldetector/share/ament_index
+[0.582s] creating /home/sami/session7/ros2-assignment7/install/walldetector/share/ament_index/resource_index
+[0.582s] creating /home/sami/session7/ros2-assignment7/install/walldetector/share/ament_index/resource_index/packages
+[0.582s] copying resource/walldetector -> /home/sami/session7/ros2-assignment7/install/walldetector/share/ament_index/resource_index/packages
+[0.582s] copying package.xml -> /home/sami/session7/ros2-assignment7/install/walldetector/share/walldetector
+[0.582s] running install_egg_info
+[0.583s] Copying ../../build/walldetector/walldetector.egg-info to /home/sami/session7/ros2-assignment7/install/walldetector/lib/python3.10/site-packages/walldetector-0.0.0-py3.10.egg-info
+[0.583s] running install_scripts
+[0.598s] Installing finder script to /home/sami/session7/ros2-assignment7/install/walldetector/lib/walldetector
+[0.598s] Installing follower script to /home/sami/session7/ros2-assignment7/install/walldetector/lib/walldetector
+[0.598s] Installing laptime_client script to /home/sami/session7/ros2-assignment7/install/walldetector/lib/walldetector
+[0.598s] Installing laptime_server script to /home/sami/session7/ros2-assignment7/install/walldetector/lib/walldetector
+[0.599s] writing list of installed files to '/home/sami/session7/ros2-assignment7/build/walldetector/install.log'
+[0.618s] Invoked command in '/home/sami/session7/ros2-assignment7/src/walldetector' returned '0': PYTHONPATH=/home/sami/session7/ros2-assignment7/build/walldetector/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sami/session7/ros2-assignment7/install/walldetector/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/walldetector build --build-base /home/sami/session7/ros2-assignment7/build/walldetector/build install --record /home/sami/session7/ros2-assignment7/build/walldetector/install.log --single-version-externally-managed install_data

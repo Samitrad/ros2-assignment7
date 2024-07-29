@@ -1,3 +1,6 @@
 [console_scripts]
-
+finder = walldetector.finder:main
+follower = walldetector.follower:main
+laptime_client = walldetector.laptime_client:main
+laptime_server = walldetector.laptime_server:main
 

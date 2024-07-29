@@ -1,2 +1,2 @@
-/home/sami/session7/build/interfaces/rosidl_adapter/interfaces:action/LapTime.idl
-/home/sami/session7/build/interfaces/rosidl_adapter/interfaces:srv/FindClosestWall.idl
+/home/sami/session7/ros2-assignment7/build/interfaces/rosidl_adapter/interfaces:action/LapTime.idl
+/home/sami/session7/ros2-assignment7/build/interfaces/rosidl_adapter/interfaces:srv/FindClosestWall.idl

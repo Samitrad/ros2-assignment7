@@ -1,8 +1,8 @@
-# Install script for directory: /home/sami/session7/build/interfaces/interfaces__py
+# Install script for directory: /home/sami/session7/ros2-assignment7/build/interfaces/interfaces__py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/sami/session7/install/interfaces")
+  set(CMAKE_INSTALL_PREFIX "/home/sami/session7/ros2-assignment7/install/interfaces")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
