@@ -1,4 +1,3 @@
-# wall_finder_service.py
 import rclpy
 from rclpy.node import Node
 from geometry_msgs.msg import Twist
@@ -24,36 +23,63 @@ class WallFinderService(Node):
         )
 
         self.twist = Twist()
-        self.distance = float('inf')
         self.closest_distance = float('inf')
         self.moving_to_wall = False
+        self.timer = None  # Initialize timer as None
+        self.target_distance = 0.5  # Desired distance from the wall
         self.get_logger().info('Service Started')
 
     def handle_find_closest_wall(self, request, response):
-        self.moving_to_wall = True
-        self.get_logger().info('Received request to find the closest wall')
+        if self.moving_to_wall:
+            response.success = False
+            response.message = 'Already moving to the wall'
+            return response
         
-        self.timer = self.create_timer(0.1, self.check_distance)
+        self.moving_to_wall = True
+        self.get_logger().info('Received request to follow the wall')
+        
+        # Ensure timer is created only once
+        if self.timer is None:
+            self.timer = self.create_timer(0.1, self.check_distance)
         
         response.success = True
+        response.message = 'Following the wall'
         return response
 
     def check_distance(self):
         if self.moving_to_wall:
-            self.twist.linear.x = 0.2
-            self.cmd_vel_pub.publish(self.twist)
-
-            if self.distance <= 0.5:
+            if self.closest_distance <= self.target_distance + 0.05 and self.closest_distance >= self.target_distance - 0.05:
+                # Move forward if within the target distance range
+                self.twist.linear.x = 0.2
+                self.twist.angular.z = 0.0
+            elif self.closest_distance < self.target_distance:
+                # Turn away from the wall if too close
                 self.twist.linear.x = 0.0
-                self.cmd_vel_pub.publish(self.twist)
-                self.get_logger().info('Stopped, wall detected')
+                self.twist.angular.z = 0.5
+            elif self.closest_distance > self.target_distance:
+                # Turn towards the wall if too far
+                self.twist.linear.x = 0.2
+                self.twist.angular.z = -0.5
+            
+            self.cmd_vel_pub.publish(self.twist)
+            self.get_logger().info(f'Following wall. Distance: {self.closest_distance}, Linear Velocity: {self.twist.linear.x}, Angular Velocity: {self.twist.angular.z}')
+        else:
+            # Stop the robot if not in wall-following mode
+            self.twist.linear.x = 0.0
+            self.twist.angular.z = 0.0
+            self.cmd_vel_pub.publish(self.twist)
+            if self.timer:
                 self.timer.cancel()
-                self.moving_to_wall = False
+                self.timer = None
 
     def scan_callback(self, msg):
-        if len(msg.ranges) > 0:
-            self.distance = min(msg.ranges)
-        self.get_logger().info(f"Distance: {self.distance}")
+        # Handle cases where msg.ranges may contain invalid data
+        valid_ranges = [r for r in msg.ranges if r > 0 and r < float('inf')]
+        if valid_ranges:
+            self.closest_distance = min(valid_ranges)
+        else:
+            self.closest_distance = float('inf')
+        self.get_logger().info(f"Closest Distance: {self.closest_distance}")
 
 def main(args=None):
     rclpy.init(args=args)

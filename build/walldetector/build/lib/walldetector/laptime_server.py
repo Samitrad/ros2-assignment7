@@ -2,8 +2,6 @@ import rclpy
 from rclpy.node import Node
 from rclpy.action import ActionServer
 from interfaces.action import LapTime
-from rclpy.duration import Duration
-import time
 
 class LapTimeActionServer(Node):
     def __init__(self):
@@ -19,17 +17,23 @@ class LapTimeActionServer(Node):
 
     async def execute_callback(self, goal_handle):
         self.get_logger().info('Executing lap time action...')
-        self.start_time = time.time()
+        clock = self.get_clock()
+        self.start_time = clock.now()
         self.lap_completed = False
 
         while not self.lap_completed:
             feedback_msg = LapTime.Feedback()
-            feedback_msg.elapsed_time = time.time() - self.start_time
+            elapsed_time = (clock.now() - self.start_time).nanoseconds / 1e9
+            feedback_msg.elapsed_time = elapsed_time
             goal_handle.publish_feedback(feedback_msg)
-            await rclpy.sleep(1)
+            
+            # Sleep using a ROS 2 clock utility
+            end_time = clock.now() + rclpy.duration.Duration(seconds=1).to_msg()
+            while clock.now() < end_time:
+                await asyncio.sleep(0.1)  # Small sleep to prevent busy waiting
 
         result = LapTime.Result()
-        result.total_time = time.time() - self.start_time
+        result.total_time = (clock.now() - self.start_time).nanoseconds / 1e9
         goal_handle.succeed()
         return result
 
@@ -42,3 +46,4 @@ def main(args=None):
 
 if __name__ == '__main__':
     main()
+
