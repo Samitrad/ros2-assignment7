@@ -1,49 +1,35 @@
 import rclpy
 from rclpy.node import Node
 from rclpy.action import ActionServer
-from interfaces.action import LapTime
+from interfaces.action import LapTime  # Import the LapTime action
 
 class LapTimeActionServer(Node):
     def __init__(self):
         super().__init__('lap_time_action_server')
-        self._action_server = ActionServer(
-            self,
-            LapTime,
-            'lap_time',
-            self.execute_callback
-        )
-        self.start_time = None
-        self.lap_completed = False
+        self._action_server = ActionServer(self, LapTime, 'measure_lap_time', self.execute_callback)
+        self.get_logger().info('Lap Time Action Server Initialized')
 
-    async def execute_callback(self, goal_handle):
-        self.get_logger().info('Executing lap time action...')
-        clock = self.get_clock()
-        self.start_time = clock.now()
-        self.lap_completed = False
-
-        while not self.lap_completed:
-            feedback_msg = LapTime.Feedback()
-            elapsed_time = (clock.now() - self.start_time).nanoseconds / 1e9
-            feedback_msg.elapsed_time = elapsed_time
-            goal_handle.publish_feedback(feedback_msg)
-            
-            # Sleep using a ROS 2 clock utility
-            end_time = clock.now() + rclpy.duration.Duration(seconds=1).to_msg()
-            while clock.now() < end_time:
-                await asyncio.sleep(0.1)  # Small sleep to prevent busy waiting
-
+    def execute_callback(self, goal_handle):
+        self.get_logger().info('Executing goal...')
+        # Add your code here to measure the lap time
+        # For now, let's just simulate a lap time measurement
+        self.get_logger().info('Measuring lap time...')
+        self.sleep(5)  # Simulate a 5-second lap time measurement
         result = LapTime.Result()
-        result.total_time = (clock.now() - self.start_time).nanoseconds / 1e9
+        result.lap_time = 5.0  # Set the lap time to 5 seconds
         goal_handle.succeed()
         return result
 
 def main(args=None):
     rclpy.init(args=args)
     node = LapTimeActionServer()
-    rclpy.spin(node)
-    node.destroy_node()
-    rclpy.shutdown()
+    try:
+        rclpy.spin(node)
+    except KeyboardInterrupt:
+        pass
+    finally:
+        node.destroy_node()
+        rclpy.shutdown()
 
 if __name__ == '__main__':
     main()
-

@@ -2,6 +2,7 @@ import rclpy
 from rclpy.node import Node
 from rclpy.action import ActionServer
 from interfaces.action import LapTime
+import asyncio
 
 class LapTimeActionServer(Node):
     def __init__(self):
@@ -12,37 +13,42 @@ class LapTimeActionServer(Node):
             'lap_time',
             self.execute_callback
         )
-        self.start_time = None
-        self.lap_completed = False
+        self.get_logger().info('Lap Time Action Server Initialized')
 
     async def execute_callback(self, goal_handle):
         self.get_logger().info('Executing lap time action...')
         clock = self.get_clock()
-        self.start_time = clock.now()
-        self.lap_completed = False
+        start_time = clock.now()
+        lap_completed = False
 
-        while not self.lap_completed:
+        while not lap_completed:
             feedback_msg = LapTime.Feedback()
-            elapsed_time = (clock.now() - self.start_time).nanoseconds / 1e9
+            elapsed_time = (clock.now() - start_time).nanoseconds / 1e9
             feedback_msg.elapsed_time = elapsed_time
             goal_handle.publish_feedback(feedback_msg)
             
-            # Sleep using a ROS 2 clock utility
-            end_time = clock.now() + rclpy.duration.Duration(seconds=1).to_msg()
-            while clock.now() < end_time:
-                await asyncio.sleep(0.1)  # Small sleep to prevent busy waiting
+            # Sleep for 1 second
+            await asyncio.sleep(1)
+            
+            # Check if lap is completed
+            lap_completed = True  # For testing, set to True; modify as needed
 
         result = LapTime.Result()
-        result.total_time = (clock.now() - self.start_time).nanoseconds / 1e9
+        result.total_time = (clock.now() - start_time).nanoseconds / 1e9
         goal_handle.succeed()
+        self.get_logger().info('Lap time action completed.')
         return result
 
 def main(args=None):
     rclpy.init(args=args)
     node = LapTimeActionServer()
-    rclpy.spin(node)
-    node.destroy_node()
-    rclpy.shutdown()
+    try:
+        rclpy.spin(node)
+    except KeyboardInterrupt:
+        pass
+    finally:
+        node.destroy_node()
+        rclpy.shutdown()
 
 if __name__ == '__main__':
     main()

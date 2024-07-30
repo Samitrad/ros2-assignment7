@@ -1,50 +1,62 @@
 import rclpy
 from rclpy.node import Node
-from rclpy.action import ActionServer
+from rclpy.action import ActionClient
 from interfaces.action import LapTime
-import asyncio
+from rclpy.exceptions import ParameterAlreadyDeclaredException
 
-class LapTimeActionServer(Node):
+class LapTimeActionClient(Node):
     def __init__(self):
-        super().__init__('lap_time_action_server')
-        self._action_server = ActionServer(
-            self,
-            LapTime,
-            'lap_time',
-            self.execute_callback
-        )
-        self.start_time = None
-        self.lap_completed = False
+        super().__init__('lap_time_action_client')
+        self._action_client = ActionClient(self, LapTime, 'lap_time')
+        self.get_logger().info('Lap Time Action Client Initialized')
+        self.send_goal()
 
-    async def execute_callback(self, goal_handle):
-        self.get_logger().info('Executing lap time action...')
-        clock = self.get_clock()
-        self.start_time = clock.now()
-        self.lap_completed = False
+    def send_goal(self):
+        # Wait for the action server to be available
+        self._action_client.wait_for_server()
 
-        while not self.lap_completed:
-            feedback_msg = LapTime.Feedback()
-            elapsed_time = (clock.now() - self.start_time).nanoseconds / 1e9
-            feedback_msg.elapsed_time = elapsed_time
-            goal_handle.publish_feedback(feedback_msg)
+        # Create a goal message
+        goal_msg = LapTime.Goal()
+        
+        # Send the goal and handle the result
+        future = self._action_client.send_goal_async(goal_msg, feedback_callback=self.feedback_callback)
+        future.add_done_callback(self.goal_response_callback)
 
-            # Calculate the time to sleep
-            end_time = clock.now() + rclpy.duration.Duration(seconds=1)
-            while clock.now() < end_time:
-                await asyncio.sleep(0.1)  # Small sleep to prevent busy waiting
+    def goal_response_callback(self, future):
+        try:
+            result = future.result()
+            if result.accepted:
+                self.get_logger().info('Goal accepted by server')
+                # Wait for the result
+                self._action_client.wait_for_result()
+                result_future = self._action_client.get_result_async()
+                result_future.add_done_callback(self.result_callback)
+            else:
+                self.get_logger().error('Goal rejected by server')
+        except Exception as e:
+            self.get_logger().error(f'Error in goal response callback: {e}')
 
-        result = LapTime.Result()
-        result.total_time = (clock.now() - self.start_time).nanoseconds / 1e9
-        goal_handle.succeed()
-        return result
+    def result_callback(self, future):
+        try:
+            result = future.result().result
+            self.get_logger().info(f'Action result: Total time = {result.total_time} seconds')
+        except Exception as e:
+            self.get_logger().error(f'Error in result callback: {e}')
+
+    def feedback_callback(self, feedback_msg):
+        self.get_logger().info(f'Feedback: Elapsed time = {feedback_msg.feedback.elapsed_time} seconds')
 
 def main(args=None):
     rclpy.init(args=args)
-    node = LapTimeActionServer()
-    rclpy.spin(node)
-    node.destroy_node()
-    rclpy.shutdown()
+    node = LapTimeActionClient()
+    try:
+        rclpy.spin(node)
+    except KeyboardInterrupt:
+        pass
+    finally:
+        node._action_client.destroy()
+        node.destroy_node()
+        rclpy.shutdown()
 
 if __name__ == '__main__':
     main()
-
