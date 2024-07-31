@@ -26,7 +26,7 @@ class WallFinderService(Node):
         self.closest_distance = float('inf')
         self.moving_to_wall = False
         self.timer = None  # Initialize timer as None
-        self.target_distance = 0.5  # Desired distance from the wall
+        self.target_distance = 1 # Desired distance from the wall
         self.get_logger().info('Service Started')
 
     def handle_find_closest_wall(self, request, response):
@@ -50,15 +50,15 @@ class WallFinderService(Node):
         if self.moving_to_wall:
             if self.closest_distance <= self.target_distance + 0.05 and self.closest_distance >= self.target_distance - 0.05:
                 # Move forward if within the target distance range
-                self.twist.linear.x = 0.2
-                self.twist.angular.z = 0.0
+                self.twist.linear.x = 0.5
+                self.twist.angular.z = 0.0 
             elif self.closest_distance < self.target_distance:
                 # Turn away from the wall if too close
-                self.twist.linear.x = 0.0
+                self.twist.linear.x = 0.02
                 self.twist.angular.z = 0.5
             elif self.closest_distance > self.target_distance:
                 # Turn towards the wall if too far
-                self.twist.linear.x = 0.2
+                self.twist.linear.x = 0.02
                 self.twist.angular.z = -0.5
             
             self.cmd_vel_pub.publish(self.twist)
@@ -90,4 +90,3 @@ def main(args=None):
 
 if __name__ == '__main__':
     main()
-

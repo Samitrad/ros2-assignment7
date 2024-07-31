@@ -1,0 +1,183 @@
+[0.007s] Invoking command in '/home/sami/session7/ros2-assignment7/build/interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sami/session7/ros2-assignment7/install/walldetector:/opt/ros/humble /usr/bin/cmake --build /home/sami/session7/ros2-assignment7/build/interfaces -- -j8 -l8
+[0.052s] [ 12%] Built target interfaces__cpp
+[0.053s] [ 12%] Built target interfaces__rosidl_generator_c
+[0.066s] [ 12%] Built target ament_cmake_python_copy_interfaces
+[0.081s] [ 23%] Built target interfaces__rosidl_typesupport_introspection_c
+[0.083s] [ 33%] Built target interfaces__rosidl_typesupport_introspection_cpp
+[0.085s] [ 51%] Built target interfaces__rosidl_typesupport_c
+[0.085s] [ 53%] Built target interfaces__rosidl_typesupport_fastrtps_cpp
+[0.087s] [ 64%] Built target interfaces__rosidl_typesupport_fastrtps_c
+[0.095s] [ 74%] Built target interfaces__rosidl_typesupport_cpp
+[0.114s] [ 74%] Built target interfaces
+[0.133s] [ 76%] Built target interfaces__py
+[0.152s] [ 84%] Built target interfaces__rosidl_generator_py
+[0.174s] [ 94%] Built target interfaces__rosidl_typesupport_c__pyext
+[0.174s] [ 94%] Built target interfaces__rosidl_typesupport_fastrtps_c__pyext
+[0.174s] [100%] Built target interfaces__rosidl_typesupport_introspection_c__pyext
+[0.278s] running egg_info
+[0.278s] writing interfaces.egg-info/PKG-INFO
+[0.279s] writing dependency_links to interfaces.egg-info/dependency_links.txt
+[0.279s] writing top-level names to interfaces.egg-info/top_level.txt
+[0.280s] reading manifest file 'interfaces.egg-info/SOURCES.txt'
+[0.281s] writing manifest file 'interfaces.egg-info/SOURCES.txt'
+[0.309s] [100%] Built target ament_cmake_python_build_interfaces_egg
+[0.319s] Invoked command in '/home/sami/session7/ros2-assignment7/build/interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sami/session7/ros2-assignment7/install/walldetector:/opt/ros/humble /usr/bin/cmake --build /home/sami/session7/ros2-assignment7/build/interfaces -- -j8 -l8
+[0.379s] Invoking command in '/home/sami/session7/ros2-assignment7/build/interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sami/session7/ros2-assignment7/install/walldetector:/opt/ros/humble /usr/bin/cmake --install /home/sami/session7/ros2-assignment7/build/interfaces
+[0.388s] -- Install configuration: ""
+[0.388s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/share/ament_index/resource_index/rosidl_interfaces/interfaces
+[0.388s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/include/interfaces/interfaces
+[0.389s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/include/interfaces/interfaces/srv
+[0.389s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/include/interfaces/interfaces/srv/detail
+[0.389s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/include/interfaces/interfaces/srv/detail/find_closest_wall__type_support.h
+[0.389s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/include/interfaces/interfaces/srv/detail/find_closest_wall__functions.c
+[0.389s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/include/interfaces/interfaces/srv/detail/find_closest_wall__struct.h
+[0.389s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/include/interfaces/interfaces/srv/detail/find_closest_wall__functions.h
+[0.389s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/include/interfaces/interfaces/srv/find_closest_wall.h
+[0.389s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/include/interfaces/interfaces/action
+[0.389s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/include/interfaces/interfaces/action/lap_time.h
+[0.389s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/include/interfaces/interfaces/action/detail
+[0.389s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/include/interfaces/interfaces/action/detail/lap_time__struct.h
+[0.389s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/include/interfaces/interfaces/action/detail/lap_time__functions.c
+[0.390s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/include/interfaces/interfaces/action/detail/lap_time__functions.h
+[0.390s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/include/interfaces/interfaces/action/detail/lap_time__type_support.h
+[0.390s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/include/interfaces/interfaces/msg
+[0.390s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/include/interfaces/interfaces/msg/rosidl_generator_c__visibility_control.h
+[0.390s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/share/interfaces/environment/library_path.sh
+[0.390s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/share/interfaces/environment/library_path.dsv
+[0.390s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/lib/libinterfaces__rosidl_generator_c.so
+[0.390s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/include/interfaces/interfaces
+[0.390s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/include/interfaces/interfaces/srv
+[0.390s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/include/interfaces/interfaces/srv/detail
+[0.390s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/include/interfaces/interfaces/srv/detail/find_closest_wall__rosidl_typesupport_fastrtps_c.h
+[0.390s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/include/interfaces/interfaces/action
+[0.390s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/include/interfaces/interfaces/action/detail
+[0.390s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/include/interfaces/interfaces/action/detail/lap_time__rosidl_typesupport_fastrtps_c.h
+[0.391s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/include/interfaces/interfaces/msg
+[0.391s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/include/interfaces/interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[0.391s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/lib/libinterfaces__rosidl_typesupport_fastrtps_c.so
+[0.391s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/include/interfaces/interfaces
+[0.391s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/include/interfaces/interfaces/srv
+[0.391s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/include/interfaces/interfaces/srv/detail
+[0.391s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/include/interfaces/interfaces/srv/detail/find_closest_wall__rosidl_typesupport_introspection_c.h
+[0.391s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/include/interfaces/interfaces/srv/detail/find_closest_wall__type_support.c
+[0.391s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/include/interfaces/interfaces/action
+[0.391s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/include/interfaces/interfaces/action/detail
+[0.391s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/include/interfaces/interfaces/action/detail/lap_time__type_support.c
+[0.391s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/include/interfaces/interfaces/action/detail/lap_time__rosidl_typesupport_introspection_c.h
+[0.391s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/include/interfaces/interfaces/msg
+[0.391s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/include/interfaces/interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[0.391s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/lib/libinterfaces__rosidl_typesupport_introspection_c.so
+[0.391s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/lib/libinterfaces__rosidl_typesupport_c.so
+[0.391s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/include/interfaces/interfaces
+[0.391s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/include/interfaces/interfaces/srv
+[0.392s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/include/interfaces/interfaces/srv/detail
+[0.392s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/include/interfaces/interfaces/srv/detail/find_closest_wall__builder.hpp
+[0.392s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/include/interfaces/interfaces/srv/detail/find_closest_wall__struct.hpp
+[0.392s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/include/interfaces/interfaces/srv/detail/find_closest_wall__traits.hpp
+[0.392s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/include/interfaces/interfaces/srv/find_closest_wall.hpp
+[0.392s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/include/interfaces/interfaces/action
+[0.392s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/include/interfaces/interfaces/action/lap_time.hpp
+[0.392s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/include/interfaces/interfaces/action/detail
+[0.392s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/include/interfaces/interfaces/action/detail/lap_time__struct.hpp
+[0.392s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/include/interfaces/interfaces/action/detail/lap_time__builder.hpp
+[0.392s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/include/interfaces/interfaces/action/detail/lap_time__traits.hpp
+[0.392s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/include/interfaces/interfaces
+[0.393s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/include/interfaces/interfaces/srv
+[0.393s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/include/interfaces/interfaces/srv/detail
+[0.393s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/include/interfaces/interfaces/srv/detail/dds_fastrtps
+[0.393s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/include/interfaces/interfaces/srv/detail/find_closest_wall__rosidl_typesupport_fastrtps_cpp.hpp
+[0.393s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/include/interfaces/interfaces/action
+[0.393s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/include/interfaces/interfaces/action/detail
+[0.393s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/include/interfaces/interfaces/action/detail/dds_fastrtps
+[0.393s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/include/interfaces/interfaces/action/detail/lap_time__rosidl_typesupport_fastrtps_cpp.hpp
+[0.393s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/include/interfaces/interfaces/msg
+[0.393s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/include/interfaces/interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[0.393s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/lib/libinterfaces__rosidl_typesupport_fastrtps_cpp.so
+[0.393s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/include/interfaces/interfaces
+[0.393s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/include/interfaces/interfaces/srv
+[0.394s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/include/interfaces/interfaces/srv/detail
+[0.394s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/include/interfaces/interfaces/srv/detail/find_closest_wall__rosidl_typesupport_introspection_cpp.hpp
+[0.394s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/include/interfaces/interfaces/srv/detail/find_closest_wall__type_support.cpp
+[0.394s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/include/interfaces/interfaces/action
+[0.394s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/include/interfaces/interfaces/action/detail
+[0.394s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/include/interfaces/interfaces/action/detail/lap_time__rosidl_typesupport_introspection_cpp.hpp
+[0.394s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/include/interfaces/interfaces/action/detail/lap_time__type_support.cpp
+[0.394s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/lib/libinterfaces__rosidl_typesupport_introspection_cpp.so
+[0.394s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/lib/libinterfaces__rosidl_typesupport_cpp.so
+[0.394s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/share/interfaces/environment/pythonpath.sh
+[0.394s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/share/interfaces/environment/pythonpath.dsv
+[0.395s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/local/lib/python3.10/dist-packages/interfaces-0.0.0-py3.10.egg-info
+[0.395s] -- Installing: /home/sami/session7/ros2-assignment7/install/interfaces/local/lib/python3.10/dist-packages/interfaces-0.0.0-py3.10.egg-info/top_level.txt
+[0.395s] -- Installing: /home/sami/session7/ros2-assignment7/install/interfaces/local/lib/python3.10/dist-packages/interfaces-0.0.0-py3.10.egg-info/PKG-INFO
+[0.395s] -- Installing: /home/sami/session7/ros2-assignment7/install/interfaces/local/lib/python3.10/dist-packages/interfaces-0.0.0-py3.10.egg-info/SOURCES.txt
+[0.395s] -- Installing: /home/sami/session7/ros2-assignment7/install/interfaces/local/lib/python3.10/dist-packages/interfaces-0.0.0-py3.10.egg-info/dependency_links.txt
+[0.395s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/local/lib/python3.10/dist-packages/interfaces
+[0.395s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/local/lib/python3.10/dist-packages/interfaces/srv
+[0.395s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/local/lib/python3.10/dist-packages/interfaces/srv/_find_closest_wall.py
+[0.395s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/local/lib/python3.10/dist-packages/interfaces/srv/__init__.py
+[0.395s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/local/lib/python3.10/dist-packages/interfaces/srv/_find_closest_wall_s.c
+[0.395s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[0.395s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[0.396s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/local/lib/python3.10/dist-packages/interfaces/_interfaces_s.ep.rosidl_typesupport_c.c
+[0.396s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/local/lib/python3.10/dist-packages/interfaces/action
+[0.396s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/local/lib/python3.10/dist-packages/interfaces/action/_lap_time_s.c
+[0.396s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/local/lib/python3.10/dist-packages/interfaces/action/_lap_time.py
+[0.396s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/local/lib/python3.10/dist-packages/interfaces/action/__init__.py
+[0.396s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/local/lib/python3.10/dist-packages/interfaces/_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[0.396s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/local/lib/python3.10/dist-packages/interfaces/_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[0.396s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[0.396s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/local/lib/python3.10/dist-packages/interfaces/__init__.py
+[0.397s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/local/lib/python3.10/dist-packages/interfaces/libinterfaces__rosidl_generator_py.so
+[0.421s] Listing '/home/sami/session7/ros2-assignment7/install/interfaces/local/lib/python3.10/dist-packages/interfaces'...
+[0.421s] Listing '/home/sami/session7/ros2-assignment7/install/interfaces/local/lib/python3.10/dist-packages/interfaces/action'...
+[0.421s] Listing '/home/sami/session7/ros2-assignment7/install/interfaces/local/lib/python3.10/dist-packages/interfaces/srv'...
+[0.425s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[0.425s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[0.426s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[0.426s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/lib/libinterfaces__rosidl_generator_py.so
+[0.426s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/share/interfaces/action/LapTime.idl
+[0.426s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/share/interfaces/srv/FindClosestWall.idl
+[0.426s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/share/interfaces/action/LapTime.action
+[0.426s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/share/interfaces/srv/FindClosestWall.srv
+[0.426s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/share/interfaces/srv/FindClosestWall_Request.msg
+[0.427s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/share/interfaces/srv/FindClosestWall_Response.msg
+[0.427s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/share/ament_index/resource_index/package_run_dependencies/interfaces
+[0.427s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/share/ament_index/resource_index/parent_prefix_path/interfaces
+[0.427s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/share/interfaces/environment/ament_prefix_path.sh
+[0.427s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/share/interfaces/environment/ament_prefix_path.dsv
+[0.427s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/share/interfaces/environment/path.sh
+[0.427s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/share/interfaces/environment/path.dsv
+[0.427s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/share/interfaces/local_setup.bash
+[0.427s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/share/interfaces/local_setup.sh
+[0.427s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/share/interfaces/local_setup.zsh
+[0.427s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/share/interfaces/local_setup.dsv
+[0.427s] -- Installing: /home/sami/session7/ros2-assignment7/install/interfaces/share/interfaces/package.dsv
+[0.427s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/share/ament_index/resource_index/packages/interfaces
+[0.428s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_generator_cExport.cmake
+[0.428s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_generator_cExport-noconfig.cmake
+[0.428s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[0.428s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[0.428s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_introspection_cExport.cmake
+[0.428s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[0.428s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_cExport.cmake
+[0.428s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[0.428s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_generator_cppExport.cmake
+[0.428s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[0.428s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[0.428s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[0.428s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[0.429s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_cppExport.cmake
+[0.429s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[0.429s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_generator_pyExport.cmake
+[0.429s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[0.429s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/share/interfaces/cmake/rosidl_cmake-extras.cmake
+[0.429s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/share/interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.429s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/share/interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.429s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/share/interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[0.429s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/share/interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[0.429s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/share/interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[0.429s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/share/interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[0.429s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/share/interfaces/cmake/interfacesConfig.cmake
+[0.429s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/share/interfaces/cmake/interfacesConfig-version.cmake
+[0.429s] -- Up-to-date: /home/sami/session7/ros2-assignment7/install/interfaces/share/interfaces/package.xml
+[0.432s] Invoked command in '/home/sami/session7/ros2-assignment7/build/interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sami/session7/ros2-assignment7/install/walldetector:/opt/ros/humble /usr/bin/cmake --install /home/sami/session7/ros2-assignment7/build/interfaces

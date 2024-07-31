@@ -23,19 +23,25 @@ class LapTimeActionClient(Node):
         future.add_done_callback(self.goal_response_callback)
 
     def goal_response_callback(self, future):
-        result = future.result()
-        if result.accepted:
-            self.get_logger().info('Goal accepted by server')
-            # Wait for the result
-            self._action_client.wait_for_result()
-            result_future = self._action_client.get_result_async()
-            result_future.add_done_callback(self.result_callback)
-        else:
-            self.get_logger().error('Goal rejected by server')
+        try:
+            result = future.result()
+            if result.accepted:
+                self.get_logger().info('Goal accepted by server')
+                # Wait for the result
+                self._action_client.wait_for_result()
+                result_future = self._action_client.get_result_async()
+                result_future.add_done_callback(self.result_callback)
+            else:
+                self.get_logger().error('Goal rejected by server')
+        except Exception as e:
+            self.get_logger().error(f'Error in goal response callback: {e}')
 
     def result_callback(self, future):
-        result = future.result().result
-        self.get_logger().info(f'Action result: Total time = {result.total_time} seconds')
+        try:
+            result = future.result().result
+            self.get_logger().info(f'Action result: Total time = {result.total_time} seconds')
+        except Exception as e:
+            self.get_logger().error(f'Error in result callback: {e}')
 
     def feedback_callback(self, feedback_msg):
         self.get_logger().info(f'Feedback: Elapsed time = {feedback_msg.feedback.elapsed_time} seconds')
@@ -48,9 +54,9 @@ def main(args=None):
     except KeyboardInterrupt:
         pass
     finally:
+        node._action_client.destroy()
         node.destroy_node()
         rclpy.shutdown()
 
 if __name__ == '__main__':
     main()
-

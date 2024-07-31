@@ -1,6 +1,6 @@
 import rclpy
 from rclpy.node import Node
-from geometry_msgs.msg import Twist
+from geometry_msgs.msg import Twist, PoseWithCovarianceStamped
 from sensor_msgs.msg import LaserScan
 import math
 
@@ -18,15 +18,25 @@ class WallFollowerNode(Node):
             10
         )
         
+        # Subscribe to the odometry topic to get yaw
+        self.odom_subscription = self.create_subscription(
+            PoseWithCovarianceStamped,
+            '/odometry/filtered',
+            self.odom_callback,
+            10
+        )
+        
+        # Initialize parameters
         self.target_distance = 0.5
-        self.stop_distance = 0.3  # Distance to stop to avoid collision
-        self.safety_margin = 0.1  # Safety margin to prevent hitting the wall
+        self.stop_distance = 0.6  # Distance to stop to avoid collision
+        self.safety_margin = 0.2  # Safety margin to prevent hitting the wall
         self.max_speed = 0.2  # Maximum speed
-        self.rotation_speed = 0.3  # Speed for rotation
+        self.rotation_speed = 0.5  # Speed for rotation
         self.rotation_angle = math.radians(90)  # 90 degrees in radians
         
         self.is_rotating = False
         self.initial_angle = 0.0
+        self.current_yaw = 0.0
         
         self.get_logger().info('Wall Follower Node Initialized')
 
@@ -43,14 +53,13 @@ class WallFollowerNode(Node):
             if not self.is_rotating:
                 # Start rotation if not already rotating
                 self.is_rotating = True
-                self.initial_angle = self.get_current_yaw()
+                self.initial_angle = self.current_yaw
                 self.twist.linear.x = 0.0
                 self.twist.angular.z = self.rotation_speed
                 self.cmd_vel_publisher.publish(self.twist)
             else:
                 # Continue rotating until the robot has rotated 90 degrees
-                current_angle = self.get_current_yaw()
-                if abs(current_angle - self.initial_angle) >= self.rotation_angle:
+                if self.check_rotation():
                     # Stop after completing the 90-degree rotation
                     self.twist.angular.z = 0.0
                     self.cmd_vel_publisher.publish(self.twist)
@@ -65,14 +74,27 @@ class WallFollowerNode(Node):
             # Move forward if at the desired distance from the wall
             self.twist.linear.x = self.max_speed
             self.twist.angular.z = 0.0
-
         # Publish the command
         self.cmd_vel_publisher.publish(self.twist)
 
-    def get_current_yaw(self):
-        # Dummy implementation for current yaw, replace with actual sensor data
-        # In a real implementation, you would get this from an odometry or IMU sensor
-        return 0.0
+    def check_rotation(self):
+        # Normalize the angle difference
+        delta_angle = self.current_yaw - self.initial_angle
+        if abs(delta_angle) > math.pi:
+            delta_angle = delta_angle - (2 * math.pi * round(delta_angle / (2 * math.pi)))
+        return abs(delta_angle) >= self.rotation_angle
+
+    def odom_callback(self, msg):
+        # Extract yaw from odometry message
+        orientation = msg.pose.pose.orientation
+        _, _, self.current_yaw = self.quaternion_to_euler(orientation.x, orientation.y, orientation.z, orientation.w)
+
+    def quaternion_to_euler(self, x, y, z, w):
+        # Convert quaternion to Euler angles
+        siny_cosp = 2 * (w * z + x * y)
+        cosy_cosp = 1 - 2 * (y * y + z * z)
+        yaw = math.atan2(siny_cosp, cosy_cosp)
+        return 0.0, 0.0, yaw
 
 def main(args=None):
     rclpy.init(args=args)
@@ -87,4 +109,3 @@ def main(args=None):
 
 if __name__ == '__main__':
     main()
-
