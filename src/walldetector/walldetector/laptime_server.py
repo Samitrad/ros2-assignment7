@@ -35,7 +35,7 @@ class LapTimeActionServer(Node):
         self.right_distance = float('inf')
         self.close_wall_threshold = 0.8
         self.last_turn_time = time.time()
-        self.delay_duration = 3.0  # 3-second delay between turn counts
+        self.delay_duration = 10.0  # 10-second delay between turn counts
         self.lap_start_time = None
 
         # Define log file path
