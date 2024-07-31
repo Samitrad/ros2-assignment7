@@ -55,11 +55,11 @@ class WallFinderService(Node):
             elif self.closest_distance < self.target_distance:
                 # Turn away from the wall if too close
                 self.twist.linear.x = 0.02
-                self.twist.angular.z = 0.5
+                self.twist.angular.z = 0.3
             elif self.closest_distance > self.target_distance:
                 # Turn towards the wall if too far
                 self.twist.linear.x = 0.02
-                self.twist.angular.z = -0.5
+                self.twist.angular.z = -0.3
             
             self.cmd_vel_pub.publish(self.twist)
             self.get_logger().info(f'Following wall. Distance: {self.closest_distance}, Linear Velocity: {self.twist.linear.x}, Angular Velocity: {self.twist.angular.z}')

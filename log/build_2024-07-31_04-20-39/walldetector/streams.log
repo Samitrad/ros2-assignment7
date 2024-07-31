@@ -1,0 +1,24 @@
+[0.638s] Invoking command in '/home/sami/session7/ros2-assignment7/src/walldetector': PYTHONPATH=/home/sami/session7/ros2-assignment7/build/walldetector/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sami/session7/ros2-assignment7/install/walldetector/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/walldetector build --build-base /home/sami/session7/ros2-assignment7/build/walldetector/build install --record /home/sami/session7/ros2-assignment7/build/walldetector/install.log --single-version-externally-managed install_data
+[0.832s] running egg_info
+[0.833s] writing ../../build/walldetector/walldetector.egg-info/PKG-INFO
+[0.833s] writing dependency_links to ../../build/walldetector/walldetector.egg-info/dependency_links.txt
+[0.834s] writing entry points to ../../build/walldetector/walldetector.egg-info/entry_points.txt
+[0.834s] writing requirements to ../../build/walldetector/walldetector.egg-info/requires.txt
+[0.834s] writing top-level names to ../../build/walldetector/walldetector.egg-info/top_level.txt
+[0.835s] reading manifest file '../../build/walldetector/walldetector.egg-info/SOURCES.txt'
+[0.836s] writing manifest file '../../build/walldetector/walldetector.egg-info/SOURCES.txt'
+[0.836s] running build
+[0.836s] running build_py
+[0.836s] running install
+[0.837s] running install_lib
+[0.838s] running install_data
+[0.838s] running install_egg_info
+[0.839s] removing '/home/sami/session7/ros2-assignment7/install/walldetector/lib/python3.10/site-packages/walldetector-0.0.0-py3.10.egg-info' (and everything under it)
+[0.839s] Copying ../../build/walldetector/walldetector.egg-info to /home/sami/session7/ros2-assignment7/install/walldetector/lib/python3.10/site-packages/walldetector-0.0.0-py3.10.egg-info
+[0.840s] running install_scripts
+[0.857s] Installing finder script to /home/sami/session7/ros2-assignment7/install/walldetector/lib/walldetector
+[0.858s] Installing follower script to /home/sami/session7/ros2-assignment7/install/walldetector/lib/walldetector
+[0.858s] Installing laptime_client script to /home/sami/session7/ros2-assignment7/install/walldetector/lib/walldetector
+[0.858s] Installing laptime_server script to /home/sami/session7/ros2-assignment7/install/walldetector/lib/walldetector
+[0.858s] writing list of installed files to '/home/sami/session7/ros2-assignment7/build/walldetector/install.log'
+[0.892s] Invoked command in '/home/sami/session7/ros2-assignment7/src/walldetector' returned '0': PYTHONPATH=/home/sami/session7/ros2-assignment7/build/walldetector/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sami/session7/ros2-assignment7/install/walldetector/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/walldetector build --build-base /home/sami/session7/ros2-assignment7/build/walldetector/build install --record /home/sami/session7/ros2-assignment7/build/walldetector/install.log --single-version-externally-managed install_data
